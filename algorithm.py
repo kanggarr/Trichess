@@ -8,6 +8,11 @@ def algorithm_provider(possible_move, current_board, type_algorithm):
         return testalgo2(possible_move, current_board)
 
 
+    # handle any algorithm
+    else:
+        return play_random(possible_move)
+    
+
 def play_random(possible_move):
     while True:
         try:
@@ -25,7 +30,6 @@ def play_random(possible_move):
             return random_piece, random_move
         except:
             pass
-
         time.sleep(1)
 
 def testalgo(possible_move, current_board):
@@ -61,3 +65,5 @@ def testalgo2(possible_move, current_board):
     except:
         pass
     time.sleep(1)
+
+

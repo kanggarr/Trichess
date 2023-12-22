@@ -93,6 +93,8 @@ async def main(url, type_algorithm):
             possible_move = await get_all_possible_move(trichess)
 
 
+            # print("This is possible move: ", possible_move)
+
             # TODO: check if all possible move is None
             if check_pass(possible_move):
                 await trichess.pass_turn()
@@ -119,6 +121,9 @@ async def main(url, type_algorithm):
 if __name__ == '__main__':
     URL = 'ws://192.168.1.170:8181/game'
     n_player = int(input("Enter number of player [int]: "))
+
+    # URL = input("Enter URL: ")
+
     
     for i in range(n_player):
         print(f"Select algorithm for player {i+1}")
