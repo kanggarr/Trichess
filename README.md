@@ -1,14 +1,2 @@
-# format command send
-
-```json
-{
-    "Command": {Command},
-    "Password": {Password},
-    "Move": {
-        "From": {PieceField},
-        "To": {PieceField}
-    },
-    "Field": {PieceField},
-    "Promotion": {PromotionPiece}
-}
-```
+สุ่มเลือกตัวหมากและการเคลื่อนไหวจากช่องทางของการเคลื่อนไหวที่เป็นไปได้ทั้งหมด
+ใช้การกิน ซึ่งพยายามจะกินตัวหมากฝ่ายตรงข้าม หากตัวหมากไม่มีการเคลื่อนไหวไปกินตัวหมากฝ่ายตรงข้ามได้ จะเดินแบบสุ่มแทน
